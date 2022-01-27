@@ -16,10 +16,6 @@
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -35,6 +31,10 @@
 
   transition: transform var(--animation-time) var(--timing-function),
     opacity var(--animation-time) var(--timing-function);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 .modal-button {
@@ -54,9 +54,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition: color var(--animation-time) var(--timing-function);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

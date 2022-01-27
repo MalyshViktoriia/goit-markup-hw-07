@@ -2,10 +2,12 @@
   border-bottom: 1px solid var(--header-bordeer-color);
 }
 
-.header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+.header {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo {
@@ -28,9 +30,11 @@
   color: var(--primary-text-color);
 }
 
-.nav-links-item:not(:last-child),
-.contacts-list-item:not(:last-child) {
-  margin-right: 50px;
+.nav-links-item,
+.contacts-list-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-list {
@@ -57,22 +61,25 @@
   position: relative;
 
   transition: color var(--animation-time) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus,
 .current {
   color: var(--accent-color);
-}
 
-.current::after {
-  content: '';
-  height: 4px;
-  background-color: var(--accent-color);
-  position: absolute;
-  bottom: -1px;
-  border-radius: 2px;
-  width: 100%;
+  &::after {
+    content: '';
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 100%;
+  }
 }
 
 .contact-icon {

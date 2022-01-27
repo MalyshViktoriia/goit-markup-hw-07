@@ -17,6 +17,12 @@
 
   transition: border-color var(--animation-time) var(--timing-function),
     color var(--animation-time) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-colour);
+    color: var(--accent-color);
+  }
 }
 
 .partners-item {
@@ -30,10 +36,4 @@
 
 .partners-icon {
   fill: currentColor;
-}
-
-.partners-link:hover,
-.partners-link:focus {
-  border-color: var(--accent-colour);
-  color: var(--accent-color);
 }
