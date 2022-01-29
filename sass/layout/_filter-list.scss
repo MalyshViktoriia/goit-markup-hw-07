@@ -1,11 +1,15 @@
-.portfolio-filter-list {
+.portfolio__filter-list {
   display: flex;
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
 }
 
-.filter-button {
+.portfolio__button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
   border: none;
   padding: 6px 22px;
 

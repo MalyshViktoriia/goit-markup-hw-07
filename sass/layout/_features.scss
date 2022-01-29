@@ -1,21 +1,20 @@
-.feature-list {
+.features {
+  padding-bottom: 0;
+}
+.features__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.peculiarities {
-  padding-bottom: 0;
-}
-
-.feature-list-item {
+.features__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.feature-title {
+.features__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -24,7 +23,7 @@
   color: var(--primary-text-color);
 }
 
-.feature-list-bg {
+.features__bg {
   background-color: var(--buttons-bgc);
   display: flex;
   width: 100%;

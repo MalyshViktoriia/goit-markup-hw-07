@@ -1,11 +1,11 @@
-.partners-list {
+.partners__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.partners-link {
+.partners__link {
   color: var(--icons-color);
   display: flex;
   width: 100%;
@@ -25,7 +25,7 @@
   }
 }
 
-.partners-item {
+.partners__item {
   display: flex;
   fill: var(--icons-color) 1b8;
 
@@ -34,6 +34,6 @@
   margin-top: 30px;
 }
 
-.partners-icon {
+.partners__icon {
   fill: currentColor;
 }

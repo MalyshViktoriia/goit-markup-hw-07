@@ -1,18 +1,18 @@
-.command-list {
+.command__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.command-title {
+.command__title {
   margin-bottom: 10px;
 
   font-weight: 500;
   color: var(--primary-text-color);
 }
 
-.command-list-item {
+.command__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -22,7 +22,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-list-person {
+.command__person {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--background-color);
@@ -32,23 +32,23 @@
   background-color: var(--buttons-bgc);
 }
 
-.command-paragraph,
-.command-title {
+.command__paragraph,
+.command__title {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
 }
 
-.command-paragraph {
+.command__paragraph {
   margin-bottom: 16px;
 }
 
-.social-list {
+.social__list {
   display: flex;
   justify-content: center;
 }
 
-.social-link {
+.social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -57,7 +57,7 @@
   border-radius: 50%;
 }
 
-.command-social-link {
+.social__link {
   color: var(--icons-color);
 
   transition: color var(--animation-time) var(--timing-function),
@@ -70,10 +70,6 @@
   }
 }
 
-.social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.command-social-icon {
-  fill: currentColor;
 }

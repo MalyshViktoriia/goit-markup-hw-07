@@ -1,20 +1,11 @@
-.section-title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  color: var(--primary-text-color);
-}
-
-.work-types {
+.our-work__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.work-types-item {
+.our-work__item {
   position: relative;
 
   flex-basis: calc(100% / 3 - 30px);
@@ -23,7 +14,7 @@
   margin-top: 30px;
 }
 
-.work-thumb-bg {
+.thumb {
   width: 100%;
   padding: 27px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -35,7 +26,7 @@
   justify-content: center;
   align-items: center;
 }
-.work-thumb-text {
+.thumb__text {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
