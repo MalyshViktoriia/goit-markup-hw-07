@@ -15,19 +15,6 @@
   }
 }
 
-.logo {
-  display: block;
-  color: var(--accent-color);
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-}
-
-.header__logo {
-  color: var(--logo-color);
-}
-
 .site-nav__list {
   display: flex;
 
