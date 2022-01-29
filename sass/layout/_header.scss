@@ -18,7 +18,7 @@
 .logo {
   display: block;
   color: var(--accent-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
